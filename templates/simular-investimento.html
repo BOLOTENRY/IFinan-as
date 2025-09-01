@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFinanças - Simular Investimento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h3>Laís Rosa</h3>
+                <a href="dashboard.html" class="back-link">voltar ao início</a>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="perfil.html">Perfil</a></li>
+                    <li><a href="upload.html">↑ upload extrato mensal</a></li>
+                    <li><a href="despesa.html">$ Registrar despesa</a></li>
+                    <li><a href="receita.html">+ Registrar Receita</a></li>
+                    <li><a href="simulador.html" class="active">Simulador</a></li>
+                    <li><a href="meta.html">Criar meta</a></li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="index.html">Sair</a>
+            </div>
+        </aside>
+        <main class="main-content">
+            <div class="form-container">
+                <h2>Simular investimento</h2>
+                <form>
+                    <div class="invest-row">
+                        <div class="invest-group">
+                            <label>Tipo de investimento</label>
+                            <div>
+                                <button type="button">CDB/LC</button>
+                                <button type="button">LCI/LCA</button>
+                                <button type="button">TESOURO</button>
+                            </div>
+                        </div>
+                        <div class="invest-group">
+                             <label>É PRÉ fixado ou PÓS fixado?</label>
+                             <div>
+                                <button type="button">PRÉ</button>
+                                <button type="button">PÓS</button>
+                                <button type="button">IPCA</button>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="form-row">
+                        <input type="text" placeholder="Investimento inicial">
+                        <input type="text" placeholder="Investimento mensal">
+                    </div>
+                    <div class="form-row">
+                        <input type="text" placeholder="Rentabilidade">
+                        <input type="text" placeholder="Prazo">
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn-calcular">Calcular</button>
+                        <button type="reset" class="btn-limpar">Limpar</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

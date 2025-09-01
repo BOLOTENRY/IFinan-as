@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFinanças - Simular Financiamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h3>Laís Rosa</h3>
+                <a href="dashboard.html" class="back-link">voltar ao início</a>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="perfil.html">Perfil</a></li>
+                    <li><a href="upload.html">↑ upload extrato mensal</a></li>
+                    <li><a href="despesa.html">$ Registrar despesa</a></li>
+                    <li><a href="receita.html">+ Registrar Receita</a></li>
+                    <li><a href="simulador.html" class="active">Simulador</a></li>
+                    <li><a href="meta.html">Criar meta</a></li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="index.html">Sair</a>
+            </div>
+        </aside>
+        <main class="main-content">
+            <div class="form-container">
+                <h2>Simular financiamento</h2>
+                <form>
+                    <div class="form-row">
+                        <input type="text" placeholder="Valor">
+                        <input type="text" placeholder="Valor de entrada">
+                    </div>
+                    <div class="form-row">
+                        <input type="text" placeholder="Taxa de juros">
+                        <select>
+                            <option>Meses</option>
+                            <option>Anos</option>
+                        </select>
+                    </div>
+                    <div class="form-actions">
+                         <button type="submit" class="btn-calcular">Calcular</button>
+                         <button type="reset" class="btn-limpar">Limpar</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
